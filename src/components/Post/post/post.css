@@ -1,0 +1,127 @@
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  padding: 0 0;
+  margin: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+.post__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 600px;
+  flex-direction: column;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: #fff;
+}
+
+.post__img {
+  position: relative;
+}
+
+.post__img img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: block;
+  width: 300px;
+  max-height: 400px;
+  image-resolution: inherit;
+}
+.post__img h2 {
+  color: white;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.post__img p {
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  opacity: 0.7;
+}
+
+.post__img div {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.post__img--editlink {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.post__content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.post__content p {
+  opacity: 0.8;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.post__content h2 {
+  margin: 0;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.post__content h4 {
+  padding: 0 10px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.post__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.post__buttons button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: rgb(12, 143, 219);
+  position: relative;
+}
+
+.post__buttons button:hover {
+  color: black;
+}
+
+.post__buttons button:hover:after {
+  width: 100%;
+  transition: 0.35s ease;
+}

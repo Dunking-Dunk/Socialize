@@ -1,0 +1,35 @@
+.editpost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/photo-1506477331477-33d5d8b3dc85.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.editpost__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.editpost__container h1 {
+  text-align: center;
+  font-size: 3rem;
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin: 0 0;
+}

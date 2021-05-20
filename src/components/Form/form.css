@@ -1,0 +1,115 @@
+.form__container {
+  border: 3px solid white;
+  padding: 20px;
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+}
+
+.form__container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__container input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+.form__buttom--submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+}
+
+.form__buttom--submit:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  transition: 0.35s ease;
+  border-radius: 50px;
+}
+
+.form__buttom--submit:hover:after {
+  width: 100%;
+  transition: 0.35s ease;
+}
+
+.form__buttom--delete {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  background: #f00000;
+  background: -webkit-linear-gradient(to right, #dc281e, #f00000);
+  background: linear-gradient(to right, #dc281e, #f00000);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+}
+
+.form__buttom--delete:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  transition: 0.35s ease;
+  border-radius: 50px;
+}
+
+.form__buttom--delete:hover:after {
+  width: 100%;
+  transition: 0.35s ease;
+}
+.form__error {
+  color: red;
+  margin: 5px;
+}
+
+.input__error {
+  border: 3px solid red;
+}
+.form__textarea {
+  max-width: 400px;
+  max-height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .form__container {
+    width: 250px;
+  }
+  .form__textarea {
+    max-width: 250px;
+    max-height: 70px;
+  }
+}
